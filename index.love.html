@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta data-rh="true" name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
+<style>
+.f-button {
+  cursor: pointer;
+  position: relative ;
+  text-decoration: none;
+  display: inline-block;
+  width: auto; /*140px*/
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.f-button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+<!--hello bro) -->
+</style>
+<script>
+var video;
+var display;
+
+window.onload = function() {
+	video = document.getElementById("videoPlayer");
+};
+
+function play() {
+    video.play();
+}
+
+function pause() {
+    video.pause();
+}
+
+function stop() {
+    video.pause();
+    video.currentTime = 0;
+}</script>
+  </head>
+  <body>
+    <audio id="videoPlayer" loop="true">
+      <source src="https://raw.githubusercontent.com/darkinapla/shiny-octo-carnival/main/Zvezdolet.mp3" type="audio/mp3">
+    </audio>
+    <div>
+      <aa class="f-button" onclick="play()">PLAY</aa>
+    </div>
+  </body>
+</html>
